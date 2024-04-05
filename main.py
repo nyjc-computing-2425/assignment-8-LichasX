@@ -8,12 +8,9 @@ def reverse(text):
   
   Return
   string which is the reversed version of text/input"""
-  char = ""
   if len(text) <= 1:
-    return text + char
-  char = text[0]
-  text = text[1:]
-  return reverse(text) + char
+    return text
+  return reverse(text[1:]) + text[0]
 
 def is_palindrome(string):
   """ 
